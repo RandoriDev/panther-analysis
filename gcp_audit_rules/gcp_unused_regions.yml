@@ -273,3 +273,26 @@ Tests:
         "severity": "ERROR",
         "timestamp": "2021-10-19 16:09:26.013200000"
       }
+  -
+    Name: "DNS Change in global region"
+    ExpectedResult: false
+    Log:
+      {
+        "logName": "projects/someproject/logs/cloudaudit.googleapis.com%2Factivity",
+        "protoPayload": {
+          "at_sign_type": "type.googleapis.com/google.cloud.audit.AuditLog",
+          "methodName": "dns.changes.create",
+          "resourceName": "managedZones/somezone",
+          "serviceName": "dns.googleapis.com",
+          "status": {}
+        },
+        "resource": {
+          "labels": {
+            "location": "global",
+            "project_id": "someproject",
+            "zone_name": "somezone"
+          },
+          "type": "dns_managed_zone"
+        },
+        "severity": "NOTICE",
+      }

@@ -7,6 +7,7 @@ APPROVED_ACTIVE_REGIONS = {
     # 'northamerica',
     # 'southamerica',
     "us",
+    "global",
 }
 
 
