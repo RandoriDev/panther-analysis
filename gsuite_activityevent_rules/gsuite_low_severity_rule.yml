@@ -2,7 +2,7 @@ AnalysisType: rule
 Filename: gsuite_low_severity_rule.py
 RuleID: GSuite.LowSeverityRule
 DisplayName: GSuite Low Severity Rule Triggered
-Enabled: true
+Enabled: false
 LogTypes:
   - GSuite.ActivityEvent
 Tags:
